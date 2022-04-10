@@ -1,0 +1,26 @@
+{
+  "name": "sweepengine",
+  "displayName": "Sweep Engine",
+  "version": "1.0.0",
+  "description": "Minesweeper engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+  },
+  "keywords": [
+    "minesweeper"
+  ],
+  "author": {
+    "name": "Narvio",
+    "email": "kozubik.michal@gmail.com",
+    "url": "https://github.com/Narvio/"
+  },
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1"
+  }
+}
