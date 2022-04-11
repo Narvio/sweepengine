@@ -5,7 +5,7 @@ import valueMatrixReducer from "./reducers/valueMatrix";
 import stateMatrixReducer, { countFlags } from "./reducers/stateMatrix";
 import gameStateReducer from "./reducers/gameState";
 
-const buildCells = (stateMatrix, valueMatrix) => {
+export const buildCells = (stateMatrix, valueMatrix) => {
   return createMatrix(stateMatrix.length, stateMatrix[0].length, (row, col) => {
     const state = stateMatrix[row][col];
     const value = valueMatrix[row][col];

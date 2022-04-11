@@ -3,10 +3,11 @@
   "displayName": "Sweep Engine",
   "version": "1.0.0",
   "description": "Minesweeper engine",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "build": "./node_modules/.bin/esbuild ./src/index.js --format=esm --bundle --outfile=./dist/index.js --platform=node --target=node16.3 --minify"
   },
   "keywords": [
     "minesweeper"
@@ -20,7 +21,16 @@
   "type": "module",
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "esbuild": "^0.14.34",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1"
+  },
+  "typings": "./dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/Narvio/sweepengine/issues"
+  },
+  "homepage": "https://github.com/Narvio/sweepengine",
+  "repository": {
+    "url": "https://github.com/Narvio/sweepengine.git"
   }
 }
