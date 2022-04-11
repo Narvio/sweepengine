@@ -32,6 +32,12 @@ export declare enum GameState {
 	Completed = "Completed",
 };
 
+export declare enum CellState {
+	Standard = "-",
+	Flagged = "?",
+	Revealed = "X",
+};
+
 /**
  * Builds the Cells abstraction from given state and value matrices
  * @param stateMatrix state matrix
