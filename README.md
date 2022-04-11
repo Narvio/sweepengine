@@ -1,4 +1,5 @@
 # sweepengine
+[![Node.js CI](https://github.com/Narvio/sweepengine/actions/workflows/node.js.yml/badge.svg)](https://github.com/Narvio/sweepengine/actions/workflows/node.js.yml)
 
 Handy and easy to use game engine for Minesweeper UI clients. This package is framework independent so it's up to you which UI technology would like to use.
 
